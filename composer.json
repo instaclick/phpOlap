@@ -1,0 +1,23 @@
+{
+    "name": "julienj/phpolap",
+    "description": "phpOlap is a php API for OLAP (XMLA)",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Julien Jacottet",
+            "email": "jjacottet@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/class-loader": "2.4.*@dev"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit": "3.7.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "phpOlap": "src"
+        }
+    }
+}
