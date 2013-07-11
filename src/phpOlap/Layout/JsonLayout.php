@@ -44,6 +44,10 @@ class JsonLayout implements LayoutInterface
      */
     public function generate()
     {
+        if ( ! $this->resultSet->getDataSet()) {
+            return json_encode(array());
+        }
+
         return json_encode($this->buildResultList());
     }
 
