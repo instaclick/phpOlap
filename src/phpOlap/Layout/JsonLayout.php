@@ -40,15 +40,18 @@ class JsonLayout implements LayoutInterface
     }
 
     /**
-     * {@inheritDoc}
+     * Generate the layout.
+     *
+     * @return array
+     *
      */
     public function generate()
     {
         if ( ! $this->resultSet->getDataSet()) {
-            return json_encode(array());
+            return array();
         }
 
-        return json_encode($this->buildResultList());
+        return $this->buildResultList();
     }
 
     /**
